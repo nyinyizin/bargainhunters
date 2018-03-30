@@ -1,0 +1,110 @@
+html, body{
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.left {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.right {
+  background-color: #434546;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.hero {
+  margin: 16px;
+  max-width: 490px;
+}
+
+.hero h1 {
+  font-size: 28px;
+  line-height: 34px;
+  max-width: 360px;
+}
+
+.hero-logo {
+  width: 50%;
+}
+
+.hero-actions {
+  margin-top: 36px;
+}
+
+.hero-actions a.hero-app img {
+  width: 140px;
+}
+
+.hero-actions a.hero-app:first-child {
+  margin-right: 8px;
+}
+
+.hero-powered, .hero-powered a {
+  color: #999
+}
+
+.hero-powered {
+  margin-top: 64px;
+  font-size: 14px;
+}
+
+.hero-powered a {
+  text-decoration: underline;
+}
+
+
+.hero-img {
+  margin: auto;
+  min-height: 800px;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 16px;
+}
+
+
+@media screen and (max-width: 690px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .hero {
+    margin: 32px 16px;
+  }
+
+}
